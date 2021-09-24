@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome 
+    do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE. ">
+    <meta name="keywords" content="Gols, Times, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número de gols</title>
+</head>
+
+<body>
+    <script>
+        // Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome 
+        // do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE. 
+        var time01 = parseFloat(prompt("Digite o nome do 1º time:")); 
+        var time02 = parseFloat(prompt("Digite o nome do 2º time:"));
+        var gols01 = parseFloat(prompt("Digite o número de gols do 1º time:"));
+        var gols02 = parseFloat(prompt("Digite o número de gols do 2º time:"));
+        if (gols01>gols02){
+            alert("O 1º time é o vencedor");
+        } else if (gols02>gols01){
+            alert("O 2º time é o vencedor");
+        } else {
+            alert("Empate");
+        }
+    </script>
+</body>
+
+</html>

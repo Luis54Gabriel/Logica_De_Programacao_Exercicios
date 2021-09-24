@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="  Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e 
+    quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média. ">
+    <meta name="keywords" content="Quantidade, Média, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade média</title>
+</head>
+
+<body>
+    <script>
+        //  Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e 
+        // quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade 
+        // média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual 
+        // a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar 
+        // compra'. 
+        var quantidadeatual = parseInt(prompt("Digite a quantidade atual: "));
+        var quantidademaxima = parseInt(prompt("Digite a quantidade máxima: "));
+        var quantidademinima = parseInt(prompt("Digite a quantidade mínima: "));
+        var quantidademedia = (quantidademaxima + quantidademinima)/2;
+        if (quantidadeatual >= quantidademedia) {
+            alert("Não efetuar compra");
+        } else {
+            alert("Efetuar compra");
+        }
+    </script>
+</body>
+
+</html>

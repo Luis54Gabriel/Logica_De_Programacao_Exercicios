@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com 
+    saída uma mensagem ">
+    <meta name="keywords" content="Senhor, Senhora, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados de 15 até 200</title>
+</head>
+
+<body>
+    <script>
+        //  Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com 
+        // saída uma das seguintes mensagens: "Ilmo Sr.", se o sexo informado como masculino, ou a 
+        // mensagem "Ilma Sra.", para o sexo informado como feminino. Apresente também junto da 
+        // mensagem de saudação o nome previamente informado. 
+          var nome = String(prompt("Digite seu nome:"));
+          var sexo = parseInt(prompt("Digite seu sexo (1 para masculino ou 2 para feminino):"));
+          if (sexo === 1){
+              alert("Ilma Sr. "+nome);
+          } else if (sexo === 2){
+              alert("Ilma sra. "+nome);
+          }
+    </script>
+</body>
+
+</html>

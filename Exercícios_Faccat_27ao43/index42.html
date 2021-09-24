@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" O programa deverá escrever a idade e o tempo 
+    de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.">
+    <meta name="keywords" content="Requerimento, Aposentadoria, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimento de aposentadoria</title>
+</head>
+
+<body>
+    <script>
+        // Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para 
+        // estar em condições, um dos seguintes requisitos deve ser satisfeito: 
+        //  - Ter no mínimo 65 anos de idade. 
+        //  - Ter trabalhado no mínimo 30 anos. 
+        //  - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos. 
+        // Com base nas informações acima, faça um algoritmo que leia: o número do empregado (código), o ano 
+        // de seu nascimento e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo 
+        // de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+        var codigo = parseInt(prompt("Digite o seu  código de empregado:"));
+        var anonasc = parseInt(prompt("Digite o ano de nascimento:"));
+        var anoemp = parseInt(prompt("Digite o ano de ingresso na empresa:"));
+        var ano = 2021;
+        var anotrab = ano - anoemp;
+        var idade = ano - anonasc;
+        if (idade >= 65) {
+            alert("Anos trabalhados: " + anotrab + ". Idade: " + idade + ". Requerer aposentadoria");
+        } else
+        if (anotrab >= 30) {
+            alert("Anos trabalhados: " + anotrab + ". Idade: " + idade + ". Requerer aposentadoria");
+        } else
+        if (idade >= 60 && anotrab >= 25) {
+            alert("Anos trabalhados: " + anotrab + ". Idade: " + idade + ". Requerer aposentadoria");
+        } else {
+            Escreval("Anos trabalhados: " + anotrab + ". Idade: " + idade + ". Não requerer aposentadoria");
+        }
+    </script>
+</body>
+
+</html>

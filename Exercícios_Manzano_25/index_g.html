@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na 
+utilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D, 
+devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim 
+C com D. Perceba que será necessário efetuar seis operações de adição e seis operações de 
+multiplicação e apresentar doze resultados de saída.">
+    <meta name="keywords" content="Adição, Multiplicação JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adição e Multiplicação de 4 números com a propriedade distributiva</title>
+</head>
+
+<body>
+    <script>
+        var numero1 = parseInt(prompt("Digite o primeiro número:"));
+        var numero2 = parseInt(prompt("Digite o segundo número:"));
+        var numero3 = parseInt(prompt("Digite o terceiro número:"));
+        var numero4 = parseInt(prompt("Digite o quarto número:"));
+
+        var result1 = numero1+numero2;
+        var result2 = numero1+numero3;
+        var result3 = numero1+numero4;
+        var result4 = numero2+numero3;
+        var result5 = numero2+numero4;
+        var result6 = numero3+numero4;
+        var result7 = numero1*numero2;
+        var result8 = numero1*numero3;
+        var result9 = numero1*numero4;
+        var result10 = numero2*numero3;
+        var result11= numero2*numero4;
+        var result12 = numero3*numero4;
+        alert("A soma entre "+numero1+" e "+numero2+" é de: "+result1);
+        alert("A soma entre "+numero1+" e "+numero3+" é de: "+result2);
+        alert("A soma entre "+numero1+" e "+numero4+" é de: "+result3);
+        alert("A soma entre "+numero2+" e "+numero3+" é de: "+result4);
+        alert("A soma entre "+numero2+" e "+numero4+" é de: "+result5);
+        alert("A soma entre "+numero3+" e "+numero4+" é de: "+result6);
+        alert("A multiplicação entre "+numero1+" e "+numero2+" é de: "+result7);
+        alert("A multiplicação entre "+numero1+" e "+numero3+" é de: "+result8);
+        alert("A multiplicação entre "+numero1+" e "+numero4+" é de: "+result9);
+        alert("A multiplicação entre "+numero2+" e "+numero3+" é de: "+result10);
+        alert("A multiplicação entre "+numero2+" e "+numero4+" é de: "+result11);
+        alert("A multiplicação entre "+numero3+" e "+numero4+" é de: "+result12);
+    </script>
+</body>
+
+</html>

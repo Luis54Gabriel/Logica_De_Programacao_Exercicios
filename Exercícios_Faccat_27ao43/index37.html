@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Escreva um algoritmo para ler a quantidade (em Kg) de 
+    morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente. ">
+    <meta name="keywords" content="Maças, Morangos, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço de maças e morangos</title>
+</head>
+
+<body>
+    <script>
+        // Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá 
+        // ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de 
+        // morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente. 
+        var quantmaca = parseInt(prompt("Digite a quantidade de maças que você adquiriu:"));
+        var quantmorango = parseInt(prompt("Digite a quantidade de morangos que você adquiriu:"));
+
+        if (quantmaca <= 5) {
+           var precomaca = quantmaca * 1.80;
+        }
+        if (quantmaca > 5) {
+           var precomaca = quantmaca * 1.50;
+        }
+        if (quantmaca <= 5) {
+           var precomorango = quantmorango * 2.50;
+        }
+        if (quantmaca > 5) {
+           var precomorango = quantmorango * 2.20;
+        }
+
+        var totalfrutas = quantmorango + quantmaca;
+        var preco = precomorango + precomaca;
+
+        if (totalfrutas > 8 && preco > 25) {
+           var precofinal = preco - ((10 / 100) * preco);
+        }
+
+        alert("O preço final do produto é de: R$"+precofinal);
+    </script>
+</body>
+
+</html>

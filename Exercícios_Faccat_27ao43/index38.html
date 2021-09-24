@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="  Faça um algoritmo para ler um número que é um código de usuário. ">
+    <meta name="keywords" content="Código, Usuário, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de usuário</title>
+</head>
+
+<body>
+    <script>
+        // Faça um algoritmo para ler um número que é um código de usuário. Caso este código seja 
+        // diferente de um código armazenado internamente no algoritmo (igual a 1234) deve ser apresentada a 
+        // mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve ser lido outro valor que é a senha. Se 
+        // esta senha estiver incorreta (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. Caso a 
+        // senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
+        var id1234 = 1234;
+        var senha9999 = 9999;
+        var id = parseInt(prompt("Digite seu código de usuário:"));
+        if (id === id1234) {
+            alert("Usuário correto!");
+            var senha = parseInt(prompt("Digite sua senha:"));
+            if (senha === senha9999) {
+                alert("Acesso permitido!");
+            } else {
+                alert("Senha incorreta!");
+            }
+        } else {
+            alert("Usuário inválido!");
+        }
+    </script>
+</body>
+
+</html>

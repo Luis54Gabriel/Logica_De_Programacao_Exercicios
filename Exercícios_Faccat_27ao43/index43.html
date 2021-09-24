@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" Algoritmo que indica o tipo de triângulo.">
+    <meta name="keywords" content="Tipo, Triângulo, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de triângulo</title>
+</head>
+
+<body>
+    <script>
+        // Algoritmo que indica o tipo de triângulo.
+        // faça um teste de mesa e complete o quadro a seguir para os seguintes valores das variáveis:
+        var a = parseInt(prompt("Digite o 1° valor:"));
+        var b = parseInt(prompt("Digite o 2° valor:"));
+        var c = parseInt(prompt("Digite o 3° valor:"));
+        if (a < b + c && b < a + c && c < a + b) {
+            if (a === b && b === c) {
+                alert("Triângulo Equilátero");
+            } else
+            if (a == b || b == c || a == c) {
+                alert("Triângulo Isósceles");
+            } else {
+                alert("Triângulo Escaleno");
+            }
+        } else {
+            alert("Não é possível formar um triângulo");
+        }
+        Fimalgoritmo
+
+        //    a   b   c    valor
+        //    1   2   3    Impossível
+        //    3   4   5    Escaleno
+        //    2   2   4    Impossível
+        //    4   4   4    Equilátero
+        //    5   3   3    isósceles
+    </script>
+</body>
+
+</html>

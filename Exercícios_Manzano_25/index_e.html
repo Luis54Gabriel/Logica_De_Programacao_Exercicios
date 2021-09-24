@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula 
+PRESTACAO ← VALOR + (VALOR * TAXA/100) * TEMPO.">
+    <meta name="keywords" content="Prestação, Atraso JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de prestação atrasada</title>
+</head>
+
+<body>
+    <script>
+        var valor = parseInt(prompt("Digite o valor:"));
+        var taxa = parseInt(prompt("Digite a taxa:"));
+        var tempo = parseInt(prompt("Digite o tempo de atraso:"));
+        var prestacao = valor+(valor*taxa/100)*tempo;
+        alert("O valor da prestação atrasada é de: R$"+prestacao);
+    </script>
+</body>
+
+</html>

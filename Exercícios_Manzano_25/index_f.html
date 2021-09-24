@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ler dois valores (inteiros, reais ou caracteres) para as variáveis A e B, e efetuar a troca dos valores de 
+forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da 
+variável A. Apresentar os valores trocados">
+    <meta name="keywords" content="Troca, Valores, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de valores</title>
+</head>
+
+<body>
+    <script>
+        var valor1 = parseInt(prompt("Digite o primeiro valor:"));
+        var valor2 = parseInt(prompt("Digite o segundo valor:"));
+        var valorreserva = valor1;
+        var valor1 = valor2;
+        var valor2 = valorreserva;
+        alert("O primeiro valor passou a ser: " + valor1 + ". E o segundo valor passou a ser: " + valor2);
+    </script>
+</body>
+
+</html>

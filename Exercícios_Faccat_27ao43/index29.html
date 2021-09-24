@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="  Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 
+    maiores.">
+    <meta name="keywords" content="Soma, Maiores, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos dois maiores</title>
+</head>
+
+<body>
+    <script>
+        //  Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 
+        //  maiores. 
+        var numero01 = parseInt(prompt("Digite um valor:"));
+        var numero02 = parseInt(prompt("Digite um valor:"));
+        var numero03 = parseInt(prompt("Digite um valor:"));
+        if (numero01 > numero02 && numero02 > numero03){
+            var soma = numero01 + numero02;
+            alert("A soma dos maiores valores: "+soma);
+        } 
+        if (numero02 > numero03 && numero03 > numero01){
+            var soma = numero02 + numero03;
+            alert("A soma dos maiores valores: "+soma);
+        }
+        if (numero03 > numero01 && numero01 > numero02){
+            var soma = numero03 + numero01;
+            alert("A soma dos maiores valores: "+soma);
+        }
+    </script>
+</body>
+
+</html>

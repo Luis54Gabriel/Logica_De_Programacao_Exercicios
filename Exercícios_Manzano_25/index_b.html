@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de 
+conversão é C ← (F - 32) * (5/9) , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.">
+    <meta name="keywords" content="Conversor, Temperatura, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura Fahrenheit - Celsius</title>
+</head>
+
+<body>
+    <script>
+        var fahrenheit = parseInt(prompt("Digite a temperatura em Fahrenheit:"));
+        var celsius = (fahrenheit - 32)*(5/9);
+        alert("A temperatura em Celsius é de: " + celsius);
+    </script>
+</body>
+
+</html>

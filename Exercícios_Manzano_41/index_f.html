@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente.  ">
+    <meta name="keywords" content="Ordem, Crescente, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem crescente</title>
+</head>
+
+<body>
+    <script>
+        //   Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente. 
+        var a = parseInt(prompt("Digite um valor:"));
+        var b = parseInt(prompt("Digite um valor:"));
+        var c = parseInt(prompt("Digite um valor:"));
+        if (a>b && b>c){
+            alert(c+", "+b+", "+a);
+        }else if (b>c && c>a){
+            alert(a+", "+c+", "+b);
+        }else if (c>a && a>b){
+            alert(b+", "+a+", "+c);
+        }
+    </script>
+</body>
+
+</html>

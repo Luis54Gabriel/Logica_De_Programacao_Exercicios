@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="  Ler dois valores e imprimir uma das três mensagens">
+    <meta name="keywords" content="Três, Mensagens, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imprimir uma das três mensagens</title>
+</head>
+
+<body>
+    <script>
+        //  Ler dois valores e imprimir uma das três mensagens a seguir: 
+        // ‘Números iguais’, caso os números sejam iguais 
+        // ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; 
+        // ‘Segundo maior’, caso o segundo seja maior que o primeiro. 
+        var numero01 = parseInt(prompt("Digite um valor:"));
+        var numero02 = parseInt(prompt("Digite um valor:"));
+        if (numero01>numero02){
+            alert("Primeiro é maior");
+        } else if (numero02>numero01){
+            alert("segundo maior");
+        } else {
+            alert("Números iguais");
+        }
+    </script>
+</body>
+
+</html>

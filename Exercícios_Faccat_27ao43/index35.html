@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Escreva um algoritmo que calcule e imprima o valor a ser pago pelo cliente sabendo-se 
+    que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. ">
+    <meta name="keywords" content="Gasolina, Álcool, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço da gasolina e álcool</title>
+</head>
+
+<body>
+    <script>
+        // Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da 
+        // seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se 
+        // que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. 
+        var gas = parseInt(prompt("Digite a o tipo de gasolina, digite 1 para Gasolina ou 2 para Álcool:"));
+        var litros = parseInt(prompt("Digite a quantidade de litros que deseja:"))
+        if (gas > 1) {
+            if (litros < 20) {
+                var valortotal = litros * (3.30 - ((3 / 100) * 3.30));
+                alert("O valor a ser pago é de: R$" + valortotal);
+            }
+            if (litros > 20) {
+                var valortotal = litros * (3.30 - ((5 / 100) * 3.30));
+                alert("O valor a ser pago é de: R$" + valortotal);
+            }
+        }
+        if (gas > 2) {
+            if (litros < 20) {
+                var valortotal = litros * (2.90 - ((3 / 100) * 2.90));
+                alert("O valor a ser pago é de: R$" + valortotal);
+            }
+            if (litros > 20) {
+                var valortotal = litros * (2.90 - ((5 / 100) * 2.90));
+                alert("O valor a ser pago é de: R$" + valortotal);
+            }
+        }
+    </script>
+</body>
+
+</html>

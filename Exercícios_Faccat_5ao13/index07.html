@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade 
+    dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.">
+    <meta name="keywords" content="Idade, Dias, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade expressa em dias</title>
+</head>
+
+<body>
+    <script>
+        //  Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva a idade 
+        // dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+        var idadeano = parseInt(prompt("Digite sua idade em anos:"));
+        var idademes = parseInt(prompt("Digite os meses de sua idade:"));
+        var idadedias = parseInt(prompt("Digite os dias de sua idade:"));
+        var idade = (idadeano * 365) + (idademes * 30) + (idadedias);
+        alert("A idade em dias corresponde a: " + idade);
+    </script>
+</body>
+
+</html>

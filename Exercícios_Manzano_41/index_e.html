@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de 
+    segundo grau, apresentando as duas raízes.">
+    <meta name="keywords" content="Equação, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação de 2º</title>
+</head>
+
+<body>
+    <script>
+        //  Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de 
+        // segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o 
+        // referido cálculo. Lembre-se de que a variável A deve ser diferente de zero. 
+          var a1 = parseInt(prompt("Digite o primeiro número:"));
+          var b1 = parseInt(prompt("Digite o segundo número:"));
+          var c1 = parseInt(prompt("Digite o terceiro número:"));
+        if (a1!=0){
+            var delta = (Math.pow(b1, 2)-4*a1*c1);
+            var x1 = ((-b1)+ (Math.sqrt(delta))/2*a1);
+            var x2 = ((-b1)- (Math.sqrt(delta))/2*a1);
+            alert("A primeira raiz tem o valor de: "+x1);
+            alert("A segunda raiz tem o valor de: "+x2);
+        } else{
+            alert("O A deve ser diferente de 0");
+        }
+    </script>
+</body>
+
+</html>

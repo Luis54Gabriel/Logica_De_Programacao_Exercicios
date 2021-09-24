@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos 
+    brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total 
+    de eleitores.">
+    <meta name="keywords" content="Eleitores, Número, Total, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número total de eleitores</title>
+</head>
+
+<body>
+    <script>
+        // Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos 
+        // brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total 
+        // de eleitores.
+        var totalelei = parseInt(prompt("Digite o total de eleitores:"));
+        var brancos = parseInt(prompt("Digite o número de votos brancos:"));
+        var nulos = parseInt(prompt("Digite o número de votos nulos:"));
+        var validos = parseInt(prompt("Digite o número de votos válidos:"));
+
+
+        var resultbrancos = (brancos / totalelei) * 100;
+        var resultnulos = (nulos / totalelei) * 100;
+        var resultvalidos = (validos / totalelei) * 100;
+        alert("A porcentagem de votos brancos foi de: " + resultbrancos + "%");
+        alert("A porcentagem de votos nulos foi de: " + resultnulos + "%");
+        alert("A porcentagem de votos validos foi de: " + resultvalidos + "%");
+    </script>
+</body>
+
+</html>

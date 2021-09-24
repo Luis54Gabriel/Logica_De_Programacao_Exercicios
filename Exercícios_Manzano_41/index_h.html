@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valores.  ">
+    <meta name="keywords" content="Maior, Menor, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e menor</title>
+</head>
+
+<body>
+    <script>
+        //  Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valores. 
+      var num01= parseInt(prompt("Digite um número: "));
+      var num02= parseInt(prompt("Digite um número: "));
+      var num03= parseInt(prompt("Digite um número: "));
+      var num04= parseInt(prompt("Digite um número: "));
+      var num05= parseInt(prompt("Digite um número: "));
+      if (num01>num02 && num01>num03 && num01>num04 && num01>num05){
+        alert("O maior valor é: "+num01);  
+      }else 
+      if (num02>num03 && num02>num04 && num02>num05 && num02>num01){
+        alert("O maior valor é: "+num02);
+      }else 
+      if (num03>num04 && num03>num05 && num03>num01 && num03>num02){
+        alert("O maior valor é: "+num03); 
+      }else 
+      if (num04>num05 && num04>num01 && num04>num02 && num04>num03){
+        alert("O maior valor é: "+num04); 
+      }else 
+      if (num05>num01 && num05>num02 && num05>num03 && num05>num04){
+        alert("O maior valor é: "+num05); 
+      }
+
+      if (num01<num02 && num01<num03 && num01<num04 && num01<num05){
+        alert("O menor valor é: "+num01);  
+      }else 
+      if (num02<num03 && num02<num04 && num02<num05 && num02<num01){
+        alert("O menor valor é: "+num02);
+      }else 
+      if (num03<num04 && num03<num05 && num03<num01 && num03<num02){
+        alert("O menor valor é: "+num03); 
+      }else 
+      if (num04<num05 && num04<num01 && num04<num02 && num04<num03){
+        alert("O menor valor é: "+num04); 
+      }else 
+      if (num05<num01 && num05<num02 && num05<num03 && num05<num04){
+        alert("O menor valor é: "+num05); 
+      }
+    </script>
+</body>
+
+</html>
