@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+    somatório e a média aritmética dos valores lidos. ">
+    <meta name="keywords" content="Somatório, Média, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatório e Média de 10 valores</title>
+</head>
+
+<body>
+    <script>
+        // Elaborar um programa que efetue a leitura de 10 valores numéricos e apresente no final o total do 
+        // somatório e a média aritmética dos valores lidos. 
+        var cont = 1;
+        var total = 0;
+        while (cont <= 10){
+        var valor = parseInt(prompt("Digite o"+ cont+ " º valor: "));
+        total = total + valor;
+        cont = cont + 1;
+        }
+        alert("O total da soma é: "+ total);
+        total = total / 10;
+        alert("A média aritmética é: "+ total);
+    </script>
+</body>

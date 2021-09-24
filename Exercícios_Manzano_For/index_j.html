@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 
+        10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius.  ">
+    <meta name="keywords" content="Celsius, Fahrenheit, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão Celsius - Fahrenheit</title>
+</head>
+
+<body>
+    <script>
+        // Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 
+        // 10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius.
+        for (var celsius = 10; celsius < 100; celsius++) {
+            alert("A temperatura em Celsius é: " + celsius + "º");
+            var fahrenheit = ((9 * celsius) + 160) / 5;
+            alert("A temperatura em Fahrenheit é: " + fahrenheit + "º");
+        }
+    </script>
+</body>
+
+</html>

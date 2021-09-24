@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Calculadora no  JavaScript">
+    <meta name="keywords" content="Calculadora, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JavaScript</title>
+</head>
+
+<body>
+    <h2>Calculadora no JavaScript</h2>
+    <p>Calculadora</p>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Clique aqui para realizar a função!</button>
+
+    <script>
+        function myFunction() {
+            var num = 7;
+            var calc = 1;
+            var result = "";
+            while (calc < 11) {
+                /*7*1=7*/
+                result += "<br>" + num + "x" + calc + " = " + (calc * num);
+                calc++;
+            }
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

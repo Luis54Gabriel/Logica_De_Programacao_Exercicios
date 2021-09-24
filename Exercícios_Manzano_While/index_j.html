@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content=" Elaborar um programa que apresente os resultados da soma e da média aritmética dos valores 
+    pares situados na faixa numérica de 50 a 70. ">
+    <meta name="keywords" content="50, 70, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatório e Média 50 - 70</title>
+</head>
+
+<body>
+    <script>
+        //  Elaborar um programa que apresente os resultados da soma e da média aritmética dos valores 
+        // pares situados na faixa numérica de 50 a 70. 
+        var cont = 50;
+        var total = 0;
+        while (cont <= 70) {
+        if (cont % 2 == 0){
+        total = total + cont;
+        }
+        cont = cont + 1;
+        }
+        alert("O total da soma é: "+ total);
+        total = total / 20;
+        alert("A média aritmética é: "+ total);
+    </script>
+</body>

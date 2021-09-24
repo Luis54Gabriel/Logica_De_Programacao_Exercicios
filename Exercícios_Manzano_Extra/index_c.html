@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description"
+        content=" Deve ser criado um programa de computador que efetue a leitura da quantidade de votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e votos em branco. ">
+    <meta name=keywords content="Percentual, Votos, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentual de votos</title>
+</head>
+
+<body>
+    <script>
+        // Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a 
+        // apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para 
+        // cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de 
+        // votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e 
+        // votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+        // válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+        // eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de 
+        // eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de 
+        // eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de 
+        // eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+        // o percentual correspondente de votos em branco em relação à quantidade de eleitores.
+        var validos = parseInt(prompt("Digite o número de votos válidos: "));
+        var brancos = parseInt(prompt("Digite o número de votos brancos:"));
+        var nulos = parseInt(prompt("Digite o número de votos nulos:"));
+        var total = validos + brancos + nulos;
+        var validosa = parseInt(prompt("Quantos votos o candidato A teve:"));
+        var validosb = parseInt(prompt("Quantos votos o candidato B teve:"));
+        var validosc = parseInt(prompt("Quantos votos o candidato C teve:"));
+
+        var percentualval = (validos/total)*100;
+        var percentualbra = (brancos/total)*100;
+        var percentualnul = (nulos/total)*100;
+        var percentuala = (validosa/validos)*100;
+        var percentualb = (validosb/validos)*100;
+        var percentualc = (validosc/validos)*100;
+
+        alert("Número total de eleitores: "+total);
+        alert("Percentual de votos válidos: "+percentualval+"%");
+        alert("Percentual de votos brancos: "+percentualbra+"%");
+        alert("Percentual de votos nulos: "+percentualnul+"%");
+        alert("Percentual de votos válidos para o candidato A: "+percentuala+"%");
+        alert("Percentual de votos válidos para o candidato B: "+percentualb+"%");
+        alert("Percentual de votos válidos para o candidato C: "+percentualc+"%");
+        </script>
+</body>
+
+</html>

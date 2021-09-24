@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description"
+        content=" Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer.">
+    <meta name="keywords" content="tabuada, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <script>
+        // Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer.
+        var numero = parseInt(prompt("Digite um número:"));
+        for (var cont = 1; cont < 10; cont++){
+        var resposta = cont * numero;
+        alert(numero+ " x "+ cont+ " = "+ resposta);
+        cont = cont + 1;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description"
+        content=" Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. ">
+    <meta name="keywords" content="Potências, 3 JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos 500 primeiros números</title>
+</head>
+
+<body>
+    <script>
+        // Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser 
+        // considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. Observe que 
+        // neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). 
+        for (var cont = 0; cont < 14; cont++) {
+            if (cont === 0) {
+                alert("1");
+                var result = 3;
+                alert(result);
+            } else {
+                result = 3 * result;
+                alert(result);
+            }
+        }
+    </script>
+</body>
+
+</html>
